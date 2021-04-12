@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="507.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorinterfaz.FXMLDocumentController">
+    <children>
+      <TextField fx:id="txtDesp" layoutX="264.0" layoutY="287.0" prefHeight="37.0" prefWidth="231.0">
+         <font>
+            <Font name="Dosis SemiBold" size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="110.0" layoutY="293.0" text="Despacho empleado">
+         <font>
+            <Font name="Dosis SemiBold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="239.0" text="Puesto empleado">
+         <font>
+            <Font name="Dosis SemiBold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPuesto" layoutX="264.0" layoutY="233.0" prefHeight="37.0" prefWidth="231.0">
+         <font>
+            <Font name="Dosis SemiBold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNombre" layoutX="262.0" layoutY="178.0" prefHeight="37.0" prefWidth="231.0">
+         <font>
+            <Font name="Dosis SemiBold" size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="108.0" layoutY="184.0" text="Nombre empleado">
+         <font>
+            <Font name="Dosis SemiBold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtID" layoutX="262.0" layoutY="128.0" prefHeight="37.0" prefWidth="53.0">
+         <font>
+            <Font name="Dosis SemiBold" size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="151.0" layoutY="134.0" text="ID empleado">
+         <font>
+            <Font name="Dosis SemiBold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="25.0" layoutY="444.0" onAction="#estaVacio" prefHeight="45.0" prefWidth="101.0" text="¿Está vacío?">
+         <font>
+            <Font name="Dosis SemiBold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="138.0" layoutY="444.0" onAction="#esHoja" prefHeight="45.0" prefWidth="89.0" text="¿Es hoja?">
+         <font>
+            <Font name="Dosis SemiBold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="374.0" layoutY="444.0" onAction="#postOrden" prefHeight="45.0" prefWidth="95.0" text="Post orden">
+         <font>
+            <Font name="Dosis SemiBold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="474.0" layoutY="444.0" onAction="#eliminarEmpleados" prefHeight="45.0" prefWidth="89.0" text="Eliminar">
+         <font>
+            <Font name="Dosis SemiBold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="376.0" onAction="#existenEmpleados" prefHeight="45.0" prefWidth="89.0" text="¿Existe?">
+         <font>
+            <Font name="Dosis SemiBold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="474.0" layoutY="376.0" onAction="#inOrden" prefHeight="45.0" prefWidth="89.0" text="In orden">
+         <font>
+            <Font name="Dosis SemiBold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="372.0" layoutY="376.0" onAction="#preOrden" prefHeight="45.0" prefWidth="89.0" text="Pre orden">
+         <font>
+            <Font name="Dosis SemiBold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="138.0" layoutY="376.0" onAction="#obtenerEmpleados" prefHeight="45.0" prefWidth="89.0" text="Obtener">
+         <font>
+            <Font name="Dosis SemiBold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="209.0" layoutY="58.0" minHeight="16" minWidth="69" text="Empleados de SpaceX">
+         <font>
+            <Font name="Dosis SemiBold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="170.0" layoutY="14.0" minHeight="16" minWidth="69" text="Árbol de Búsqueda Binaria">
+         <font>
+            <Font name="Dosis SemiBold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="252.0" layoutY="376.0" onAction="#insertarEmpleados" prefHeight="45.0" prefWidth="89.0" text="Insertar">
+         <font>
+            <Font name="Dosis SemiBold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="251.0" layoutY="444.0" onAction="#mostrarEmpleados" prefHeight="45.0" prefWidth="89.0" text="Mostrar">
+         <font>
+            <Font name="Dosis SemiBold" size="16.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
