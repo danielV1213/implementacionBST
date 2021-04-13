@@ -53,46 +53,92 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void mostrarEmpleados(ActionEvent event) {
-        JOptionPane.showMessageDialog(null,bstE.toString());
+        txtNombre.clear();
+        txtPuesto.clear();
+        txtDesp.clear();
+        txtID.clear();
+
     }
 
     @FXML
     private void existenEmpleados(ActionEvent event) {
-//       bstE.existe(69);
+        int id;
+        String nombre;
+        boolean existe;
+        nombre = JOptionPane.showInputDialog("Ingrese el nombre del empleado que desea verificar si se encuentra en el árbol");
+        id = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el ID del empleado que desea verificar si se encuentra en el árbol"));
+        existe = bstE.existe(id);
+        if(existe == true){
+            JOptionPane.showMessageDialog(null, "Su empleado se encuentra en el árbol");
+        }else{
+            JOptionPane.showMessageDialog(null, "Su empleado no se encuentra en el árbol");
+        }
+        
     }
 
     @FXML
     private void estaVacio(ActionEvent event) {
+        boolean vacio = bstE.esVacio();
+        if(vacio == true){
+            JOptionPane.showMessageDialog(null, "El árbol está vacío");
+        }else{
+            JOptionPane.showMessageDialog(null, "El arbol no está vacío");
+        }
 
     }
 
     @FXML
     private void obtenerEmpleados(ActionEvent event) {
+        int id;
+        id = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el ID del empleado que desea obtener"));        
+        boolean existe = bstE.existe(id);
+        if(existe == true){
+            Empleado emple = bstE.obtener(id);
+            JOptionPane.showMessageDialog(null, "El empleado que corresponde al ID introducido es " + emple.toString());
+        }else{
+            JOptionPane.showMessageDialog(null, "Su empleado no se encuentra en el árbol");
+        }
+        
 
     }
 
     @FXML
     private void esHoja(ActionEvent event) {
+        boolean hoja = bstE.esHoja();
+        if(hoja == true){
+            JOptionPane.showMessageDialog(null, "Sí es una hoja");
+        }else{
+            JOptionPane.showMessageDialog(null, "No es una hoja");
+        }
 
     }
 
     @FXML
     private void preOrden(ActionEvent event) {
      bstE.preOrden();
+     JOptionPane.showMessageDialog(null, "Revisa la consola pls :D");
     }
 
     @FXML
     private void inOrden(ActionEvent event) {
+     bstE.inOrden();
+     JOptionPane.showMessageDialog(null, "Revisa la consola pls :D");
 
     }
 
     @FXML
     private void postOrden(ActionEvent event) {
+     bstE.postOrden();
+     JOptionPane.showMessageDialog(null, "Revisa la consola pls :D");
 
     }
 
     @FXML
     private void eliminarEmpleados(ActionEvent event) {
+        int id;
+        id = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el ID del empleado que desea eliminar"));
+        bstE.eliminar(id);
+        JOptionPane.showMessageDialog(null, "El empleado se ha eliminado");
 
     }
 

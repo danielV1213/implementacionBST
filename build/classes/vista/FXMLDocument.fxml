@@ -104,7 +104,7 @@
             <Font name="Dosis SemiBold" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="251.0" layoutY="444.0" onAction="#mostrarEmpleados" prefHeight="45.0" prefWidth="89.0" text="Mostrar">
+      <Button layoutX="251.0" layoutY="444.0" onAction="#mostrarEmpleados" prefHeight="45.0" prefWidth="89.0" text="Limpiar">
          <font>
             <Font name="Dosis SemiBold" size="16.0" />
          </font>
