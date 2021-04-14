@@ -115,21 +115,26 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void preOrden(ActionEvent event) {
-     bstE.preOrden();
-     JOptionPane.showMessageDialog(null, "Revisa la consola pls :D");
+       String pre = ""; 
+       pre = bstE.preOrden();
+       JOptionPane.showMessageDialog(null, pre);
+//     bstE.preOrden();
+//     JOptionPane.showMessageDialog(null, "Revisa la consola pls :D");
     }
 
     @FXML
     private void inOrden(ActionEvent event) {
-     bstE.inOrden();
-     JOptionPane.showMessageDialog(null, "Revisa la consola pls :D");
+     String in = "";  
+     in = bstE.inOrden();
+     JOptionPane.showMessageDialog(null, in);
 
     }
 
     @FXML
     private void postOrden(ActionEvent event) {
-     bstE.postOrden();
-     JOptionPane.showMessageDialog(null, "Revisa la consola pls :D");
+     String post = "";   
+     post = bstE.postOrden();
+     JOptionPane.showMessageDialog(null, post);
 
     }
 

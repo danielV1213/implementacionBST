@@ -8,8 +8,8 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="implementacionBST.jar" size="4531" download="eager" />
-    <jar href="lib\BST.jar" size="9313" download="eager" />
+    <jar href="implementacionBST.jar" size="4533" download="eager" />
+    <jar href="lib\BST.jar" size="9861" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="implementacionBST" >
     <param name="requiredFXVersion" value="8.0+"/>
