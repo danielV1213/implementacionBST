@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="507.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorinterfaz.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="507.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorinterfaz.FXMLDocumentController">
     <children>
       <TextField fx:id="txtDesp" layoutX="264.0" layoutY="287.0" prefHeight="37.0" prefWidth="231.0">
          <font>

@@ -34,7 +34,7 @@ public class FXMLDocumentController implements Initializable {
     private TextField txtDesp;
 
     BST bstE;
-//    IBST<Empleado> bstE;
+    
 
     @FXML
     private void insertarEmpleados(ActionEvent event) {
